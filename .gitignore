@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 .DS_Store
 data_cifar10/
+best_resnet18.pth/
