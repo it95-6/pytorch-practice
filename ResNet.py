@@ -42,9 +42,9 @@ test_loader = DataLoader(test_data,batch_size=64,shuffle=False)
 
 device = torch.device("mps" if torch.backends.mps.is_available() else 'cpu')
 
-model = models.resnet18(weights=None)
+model = models.resnet18(weights=...)
 
-model.fc = nn.Linear(model.fc.in_features,10)
+model.fc = nn.Linear(model.fc.in_features,10)#fully connected layer
 
 model = model.to(device)
 
@@ -94,7 +94,7 @@ for epoch in range(5):
     
     train_losses.append(train_loss)
     val_losses.append(val_loss)
-    
+
 
     if val_acc > best_val_acc:
         best_val_acc = val_acc
