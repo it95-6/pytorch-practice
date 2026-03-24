@@ -3,5 +3,5 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 .DS_Store
-data_cifar10/
-best_resnet18.pth/
+data_cifar1
+*.pth

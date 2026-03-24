@@ -94,6 +94,7 @@ for epoch in range(5):
     
     train_losses.append(train_loss)
     val_losses.append(val_loss)
+    
 
     if val_acc > best_val_acc:
         best_val_acc = val_acc
